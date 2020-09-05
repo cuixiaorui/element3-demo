@@ -1,26 +1,32 @@
 <template>
   <div id="app">
-    <div>
-      <p>button</p>
+    <BaseView title="Button">
       <ButtonView></ButtonView>
-    </div>
-    <hr />
-    <div>
-      <p>switch</p>
+    </BaseView>
+
+    <BaseView title="Switch">
       <SwitchView></SwitchView>
-    </div>
+    </BaseView>
+
+    <BaseView title="Progress">
+      <ProgressView></ProgressView>
+    </BaseView>
   </div>
 </template>
 
 <script>
+import BaseView from "./components/BaseView";
 import ButtonView from "./components/ButtonView";
 import SwitchView from "./components/SwitchView";
+import ProgressView from "./components/ProgressView";
 
 export default {
   name: "App",
   components: {
+    BaseView,
     ButtonView,
     SwitchView,
+    ProgressView,
   },
 };
 </script>
