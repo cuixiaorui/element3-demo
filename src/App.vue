@@ -11,6 +11,10 @@
     <BaseView title="Progress">
       <ProgressView></ProgressView>
     </BaseView>
+
+    <BaseView title="Link">
+      <LinkView></LinkView>
+    </BaseView>
   </div>
 </template>
 
@@ -19,6 +23,7 @@ import BaseView from "./components/BaseView";
 import ButtonView from "./components/ButtonView";
 import SwitchView from "./components/SwitchView";
 import ProgressView from "./components/ProgressView";
+import LinkView from "./components/LinkView";
 
 export default {
   name: "App",
@@ -27,6 +32,7 @@ export default {
     ButtonView,
     SwitchView,
     ProgressView,
+    LinkView,
   },
 };
 </script>
