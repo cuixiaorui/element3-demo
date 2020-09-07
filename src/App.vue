@@ -15,6 +15,10 @@
     <BaseView title="Link">
       <LinkView></LinkView>
     </BaseView>
+
+    <BaseView title="Icon">
+      <IconView></IconView>
+    </BaseView>
   </div>
 </template>
 
@@ -24,6 +28,7 @@ import ButtonView from "./components/ButtonView";
 import SwitchView from "./components/SwitchView";
 import ProgressView from "./components/ProgressView";
 import LinkView from "./components/LinkView";
+import IconView from "./components/IconView";
 
 export default {
   name: "App",
@@ -33,6 +38,7 @@ export default {
     SwitchView,
     ProgressView,
     LinkView,
+    IconView,
   },
 };
 </script>
