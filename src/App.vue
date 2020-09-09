@@ -19,6 +19,11 @@
     <BaseView title="Icon">
       <IconView></IconView>
     </BaseView>
+
+
+    <BaseView title="Breadcrumb">
+    <BreadcrumbView></BreadcrumbView>
+    </BaseView>
   </div>
 </template>
 
@@ -29,10 +34,12 @@ import SwitchView from "./components/SwitchView";
 import ProgressView from "./components/ProgressView";
 import LinkView from "./components/LinkView";
 import IconView from "./components/IconView";
+import BreadcrumbView from "./components/BreadcrumbView";
 
 export default {
   name: "App",
   components: {
+    BreadcrumbView,
     BaseView,
     ButtonView,
     SwitchView,
