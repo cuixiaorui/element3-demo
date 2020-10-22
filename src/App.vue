@@ -20,13 +20,16 @@
       <IconView></IconView>
     </BaseView>
 
-
     <BaseView title="Breadcrumb">
-    <BreadcrumbView></BreadcrumbView>
+      <BreadcrumbView></BreadcrumbView>
     </BaseView>
 
     <BaseView title="Menu">
-    <MenuView></MenuView>
+      <MenuView></MenuView>
+    </BaseView>
+
+    <BaseView title="Tree">
+      <TreeView></TreeView>
     </BaseView>
   </div>
 </template>
@@ -39,8 +42,8 @@ import ProgressView from "./components/ProgressView";
 import LinkView from "./components/LinkView";
 import IconView from "./components/IconView";
 import BreadcrumbView from "./components/BreadcrumbView";
-import MenuView from './components/MenuView'
-
+import MenuView from "./components/MenuView";
+import TreeView from "./components/TreeView";
 
 export default {
   name: "App",
@@ -52,7 +55,8 @@ export default {
     ProgressView,
     LinkView,
     IconView,
-    MenuView
+    MenuView,
+    TreeView,
   },
 };
 </script>
