@@ -31,6 +31,10 @@
     <BaseView title="Tree">
       <TreeView></TreeView>
     </BaseView>
+
+    <BaseView title="Pagination">
+      <PaginationView></PaginationView>
+    </BaseView>
   </div>
 </template>
 
@@ -44,6 +48,7 @@ import IconView from "./components/IconView";
 import BreadcrumbView from "./components/BreadcrumbView";
 import MenuView from "./components/MenuView";
 import TreeView from "./components/TreeView";
+import PaginationView from "./components/PaginationView";
 
 export default {
   name: "App",
@@ -57,6 +62,7 @@ export default {
     IconView,
     MenuView,
     TreeView,
+    PaginationView,
   },
 };
 </script>
