@@ -35,6 +35,26 @@
     <BaseView title="Pagination">
       <PaginationView></PaginationView>
     </BaseView>
+
+    <BaseView title="Layout">
+      <LayoutView></LayoutView>
+    </BaseView>
+
+    <BaseView title="Container">
+      <ContainerView></ContainerView>
+    </BaseView>
+
+    <BaseView title="Tag">
+      <TagView></TagView>
+    </BaseView>
+
+    <BaseView title="Badge">
+      <BadgeView></BadgeView>
+    </BaseView>
+
+    <BaseView title="avatar">
+      <AvatarView></AvatarView>
+    </BaseView>
   </div>
 </template>
 
@@ -49,6 +69,11 @@ import BreadcrumbView from "./components/BreadcrumbView";
 import MenuView from "./components/MenuView";
 import TreeView from "./components/TreeView";
 import PaginationView from "./components/PaginationView";
+import LayoutView from "./components/LayoutView";
+import ContainerView from "./components/ContainerView";
+import TagView from "./components/TagView";
+import BadgeView from "./components/BadgeView";
+import AvatarView from "./components/AvatarView";
 
 export default {
   name: "App",
@@ -63,6 +88,11 @@ export default {
     MenuView,
     TreeView,
     PaginationView,
+    LayoutView,
+    ContainerView,
+    TagView,
+    BadgeView,
+    AvatarView,
   },
 };
 </script>
