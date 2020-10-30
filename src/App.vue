@@ -52,8 +52,12 @@
       <BadgeView></BadgeView>
     </BaseView>
 
-    <BaseView title="avatar">
+    <BaseView title="Avatar">
       <AvatarView></AvatarView>
+    </BaseView>
+
+    <BaseView title="Form">
+      <FormView></FormView>
     </BaseView>
   </div>
 </template>
@@ -74,6 +78,7 @@ import ContainerView from "./components/ContainerView";
 import TagView from "./components/TagView";
 import BadgeView from "./components/BadgeView";
 import AvatarView from "./components/AvatarView";
+import FormView from "./components/FormView";
 
 export default {
   name: "App",
@@ -93,6 +98,7 @@ export default {
     TagView,
     BadgeView,
     AvatarView,
+    FormView,
   },
 };
 </script>
