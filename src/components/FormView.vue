@@ -1,44 +1,51 @@
 <template>
-  <div>
-    <el-row class="demo-avatar demo-basic">
-      <el-col :span="12">
-        <div class="sub-title">circle</div>
-        <div class="demo-basic--circle">
-          <div class="block">
-            <el-avatar :size="50" :src="circleUrl"></el-avatar>
-          </div>
-          <div class="block" v-for="size in sizeList" :key="size">
-            <el-avatar :size="size" :src="circleUrl"></el-avatar>
-          </div>
-        </div>
-      </el-col>
-      <el-col :span="12">
-        <div class="sub-title">square</div>
-        <div class="demo-basic--circle">
-          <div class="block">
-            <el-avatar shape="square" :size="50" :src="squareUrl"></el-avatar>
-          </div>
-          <div class="block" v-for="size in sizeList" :key="size">
-            <el-avatar shape="square" :size="size" :src="squareUrl"></el-avatar>
-          </div>
-        </div>
-      </el-col>
-    </el-row>
-  </div>
+  <el-form ref="form" :model="form" label-width="auto">
+    <el-form-item label="活动名称">
+      <el-input v-model="form.name"></el-input>
+    </el-form-item>
+    <el-form-item label="即时配送">
+      <el-switch v-model="form.delivery"></el-switch>
+    </el-form-item>
+    <el-form-item label="活动性质">
+      <el-checkbox-group v-model="form.type">
+        <el-checkbox label="美食/餐厅线上活动" name="type"></el-checkbox>
+        <el-checkbox label="地推活动" name="type"></el-checkbox>
+        <el-checkbox label="线下主题活动" name="type"></el-checkbox>
+        <el-checkbox label="单纯品牌曝光" name="type"></el-checkbox>
+      </el-checkbox-group>
+    </el-form-item>
+    <el-form-item label="特殊资源">
+      <el-radio-group v-model="form.resource">
+        <el-radio label="线上品牌商赞助"></el-radio>
+        <el-radio label="线下场地免费"></el-radio>
+      </el-radio-group>
+    </el-form-item>
+    <el-form-item label="活动形式">
+      <el-input type="textarea" v-model="form.desc"></el-input>
+    </el-form-item>
+    <el-form-item>
+      <el-button type="primary" @click="onSubmit">立即创建</el-button>
+      <el-button>取消</el-button>
+    </el-form-item>
+  </el-form>
 </template>
-
 <script>
 export default {
   data() {
     return {
-      circleUrl:
-        "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png",
-      squareUrl:
-        "https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png",
-      sizeList: ["large", "medium", "small"],
+      form: {
+        name: "",
+        delivery: false,
+        type: [],
+        resource: "",
+        desc: "",
+      },
     };
+  },
+  methods: {
+    onSubmit() {
+      console.log("submit!", this.form);
+    },
   },
 };
 </script>
-
-<style lang="scss" scoped></style>

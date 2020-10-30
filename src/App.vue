@@ -56,8 +56,6 @@
       <AvatarView></AvatarView>
     </BaseView>
 
-    <BaseView title="Form">
-      <FormView></FormView>
     <BaseView title="tabs">
       <TabsView></TabsView>
     </BaseView>
@@ -134,16 +132,20 @@
       <ImageView></ImageView>
     </BaseView>
 
-    <BaseView title="Backtop">
+    <!-- <BaseView title="Backtop">
       <Backtop></Backtop>
     </BaseView>
 
     <BaseView title="InfiniteScrollView">
       <InfiniteScrollView></InfiniteScrollView>
-    </BaseView>
+    </BaseView> -->
 
     <BaseView title="DrawerView">
       <DrawerView></DrawerView>
+    </BaseView>
+
+    <BaseView title="Form">
+      <FormView></FormView>
     </BaseView>
   </div>
 </template>
@@ -177,7 +179,6 @@ import ContainerView from "./components/ContainerView";
 import TagView from "./components/TagView";
 import BadgeView from "./components/BadgeView";
 import AvatarView from "./components/AvatarView";
-import FormView from "./components/FormView";
 import TabsView from "./components/TabsView";
 import PageHeaderView from "./components/PageHeaderView";
 import DrapdownView from "./components/DrapdownView";
@@ -187,6 +188,7 @@ import NotificationView from "./components/NotificationView";
 import DialogView from "./components/DialogView";
 import PopconfirmView from "./components/PopconfirmView";
 import ImageView from "./components/ImageView";
+import FormView from "./components/FormView";
 
 export default {
   name: "App",
