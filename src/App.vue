@@ -52,7 +52,7 @@
       <BadgeView></BadgeView>
     </BaseView>
 
-    <BaseView title="avatar">
+    <BaseView title="Avatar">
       <AvatarView></AvatarView>
     </BaseView>
 
@@ -132,16 +132,20 @@
       <ImageView></ImageView>
     </BaseView>
 
-    <BaseView title="Backtop">
+    <!-- <BaseView title="Backtop">
       <Backtop></Backtop>
     </BaseView>
 
     <BaseView title="InfiniteScrollView">
       <InfiniteScrollView></InfiniteScrollView>
-    </BaseView>
+    </BaseView> -->
 
     <BaseView title="DrawerView">
       <DrawerView></DrawerView>
+    </BaseView>
+
+    <BaseView title="Form">
+      <FormView></FormView>
     </BaseView>
   </div>
 </template>
@@ -184,6 +188,8 @@ import NotificationView from "./components/NotificationView";
 import DialogView from "./components/DialogView";
 import PopconfirmView from "./components/PopconfirmView";
 import ImageView from "./components/ImageView";
+import FormView from "./components/FormView";
+
 export default {
   name: "App",
   components: {
@@ -224,6 +230,7 @@ export default {
     TagView,
     BadgeView,
     AvatarView,
+    FormView,
   },
 };
 </script>
