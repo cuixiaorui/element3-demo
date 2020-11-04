@@ -26,6 +26,9 @@
     <el-form-item label="活动星级" prop="rate">
       <el-rate v-model="form.rate"></el-rate>
     </el-form-item>
+    <el-form-item label="负责人" prop="man">
+      <el-cascader v-model="form.man" :options="options"></el-cascader>
+    </el-form-item>
     <el-form-item label="参与人数" prop="joinNum">
       <el-input-number
         v-model="form.joinNum"
@@ -93,6 +96,7 @@ export default {
         name: "",
         delivery: false,
         type: [],
+        man: "",
         resource: "",
         desc: "",
         joinNum: 1,
